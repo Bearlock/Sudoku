@@ -1,0 +1,132 @@
+html {
+	background: url(sudokuback.jpg) no-repeat center center fixed;
+	background-size:cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+}
+body {
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	margin: 15px;
+	padding: 0;
+	color: #fff;
+}
+h1 {
+	text-align: center;
+	color: #fff;
+	font-size: 76px;
+	padding:0;
+	margin: 0;
+}
+table {
+    border: solid 3px;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    border-color: rgba(255,255,255,0.25);
+}
+td {
+	border: dashed rgba(255,255,255,0.25);
+	color: black;
+	font-size: 36px;
+}
+
+td input {
+	background: none;
+	border: none;
+	padding: 0px;
+	width: 55px;
+	height: 55px;
+	text-align: center;
+	font-size: 36px;
+	color: transparent;
+    text-shadow: 0px 0px 0px #00e6ff;
+    transition: text-shadow 500ms linear;
+}
+
+td input:focus {
+	background-color: rgba(9,11,13,0.25);
+}
+
+button {
+	padding: 5px 15px;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background-color: transparent;
+	color: #fff;
+	border: medium none;
+	font-size: 22px;
+	transition: background-color 300ms linear 0s;
+	vertical-align: top;
+    margin-top: 5px;
+    border-radius: 15px;
+}
+
+#easy:hover	{
+	background-color: #5b7021;
+}
+
+#medium:hover {
+	background-color: #B67E11;
+}
+
+#hard:hover {
+	background-color: #822302;
+}
+#reset:hover {
+	background-color: #397357;
+}
+
+button:focus{
+	outline: none;
+}
+
+.sudokucell {
+	height: 60px;
+	width: 60px;
+	text-align: center;
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+.right {
+	border-right: solid 3px;
+	border-right-color: rgba(204, 0, 0, 0.6);
+}
+.bottom {
+	border-bottom: solid 3px;
+	border-bottom-color: rgba(204, 0, 0, 0.6);
+}
+#commandHub {
+
+	margin-bottom: 5px;
+}
+
+#difficulties {
+	margin: 0 auto;
+	width: 400px;
+}
+
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+}
+#title {
+	text-align: center;
+}
+
+#iString {
+	margin-left: 37%;
+}
+
+#cButton {
+	margin-left: 37%;
+}
+.conflict {
+	color: transparent;
+	text-shadow: 0px 0px 0px #b94242;
+}
+#timer {
+	margin: 0 auto;
+	width: 100px;
+	font-size: 36px;
+}

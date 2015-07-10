@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Documentation</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<h1>Documentation</h1>
+		<hr />
+		<h3>Numbers</h3>
+		<p> 
+			Given Numbers are different than user-defined numbers and cannot be changed by the user. This was accomplished by loading up a game file (JSON file),  				looping through the JSON values, and inserting numbers at [i] on the same position in the grid. The game logic then looks for any JSON values that were " 			" (a space essentially). It adds a 'userinput' class to these blank cells. When the game finds and adds that class, it changes the inner HTML to have an 			input type. The player is able to get feedback at any time by the color of the numbers. Game-defined numbers are black, user-defined numbers are initially 			blue. If a conflict does arise either from a game-defined number, or a user-defined number, the color of the user-defined number(s) turns red. If the 				conflict is removed, the color reverts back to blue. In addition to the difficulty buttons, there is also a reset button that reverts the current puzzle 			back to its initial state without stopping or resetting the timer. 
+		</p>
+		<h3>Puzzles</h3>
+		<p>
+			There are three different game difficulties. These are made apparent by having three different buttons along the top of the puzzle, each being easy, 				medium, and hard respectively. When a user clicks on a difficulty a random puzzle file is selected and an XMLHttpRequest is sent. There are three 					potential puzzles that can be retrieved by the request totaling 9 puzzles altogether. Each puzzle file is a separate JSON file; the puzzles are all named 			by their difficulty followed by a number between 1-3, e.g "medium2.JSON". The game logic then loops through this JSON file and inserts its values into the 			grid.
+		</p>
+		<h3>Timer</h3>
+		<p>
+			The game implements a timer that starts as soon as a difficulty is selected. This is accomplished by having a global variable 'f' set to 0, and 					incremented by 1 every time the startClock() function is called. The startClock() function is called in another function and has a set interval of 1000. 			There are a set of modulus functions that modify f in startTime() that act as seconds, minutes, and hours. The timer resets every time a new difficulty is 			selected. The timer does not reset when a user resets a puzzle. The timer stops when a user completes a puzzle.
+		</p>
+		<h3>Local Storage</h3>
+		<p>
+			The game fulfills the HTML5 requirement by making use of local storage. After a user wins and finishes a puzzle, the game takes the current value of the 			ending time and stores it in a local Storage variable called 'bestTime'. This value is then subsequently displayed in the bottom left corner as the users 			best time. The point of this is to have it act as a high score of sorts, so that the user can always keep track of their fastest time.
+		</p>
+	</body>
+</html> 
+
+		
