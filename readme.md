@@ -9,6 +9,6 @@ this array is indexed through and fills in the cell
 elements of my game grid effectively creating a 
 static prototype of my Sudoku game. 
 <br />
-<br /?
+<br />
 This JavaScript implementation has 3 difficulties
 with 3 different puzzles per difficulty.
