@@ -1,4 +1,4 @@
-#Sudoku
+# Sudoku
 
 This is a JavaScript implementation of Sudoku<br />
 
